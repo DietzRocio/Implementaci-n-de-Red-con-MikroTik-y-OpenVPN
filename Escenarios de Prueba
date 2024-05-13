@@ -1,0 +1,28 @@
+CONECTIVIDAD DE RED:
+Objetivo: Verificar la conectividad básica entre los dispositivos en la red.
+Procedimiento: hacer ping desde un dispositivo en la red local hacia otros dispositivos en la misma red y
+hacia dispositivos en la red remota a través de la conexión VPN.
+
+CONMUTACIÓN POR ERROR:
+Objetivo: Evaluar la capacidad de la red para conmutar por error de manera automática en caso de fallo de un dispositivo.
+Procedimiento: Desactiva uno de los dispositivos en la red y
+verifica si los dispositivos restantes pueden mantener la conectividad y continuar funcionando correctamente
+
+RECUPERACIÓN ANTE FALLOS:
+Objetivo: Evaluar el tiempo y la eficacia de la recuperación ante fallos de la red.
+Procedimiento: SimulaR un fallo en uno de los dispositivos y observa el tiempo que tarda la red en recuperarse y restaurar la conectividad.
+
+CARGA DE TRAFICO:
+Objetivo: Evaluar el rendimiento de la red bajo condiciones de carga de tráfico.
+Procedimiento: Genera tráfico de red intenso entre varios dispositivos en la red y
+observa cómo responde la red en términos de latencia, pérdida de paquetes y ancho de banda disponible.
+
+CONEXIONES VPN:
+Objetivo: Verificar la capacidad de los clientes VPN para conectarse al servidor VPN y acceder a los recursos de la red de emergencia.
+Procedimiento: Intenta establecer conexiones VPN desde diferentes ubicaciones remotas y 
+verificar si los clientes pueden acceder a los recursos de la red de emergencia de manera segura y confiable.
+
+BACKUP:
+Objetivo: Evaluar la capacidad de respaldo y restauración de la configuración de los dispositivos MikroTik.
+Procedimiento: Realizar una copia de seguridad de la configuración de los dispositivos y 
+luego restaurar la configuración desde la copia de seguridad para verificar que todo funcione correctamente.
