@@ -1,0 +1,55 @@
+- Instalación de MikroTik RouterOS: https://mikrotik.com/software
+- Instalación de OpenVPN
+
+
+-https://help.mikrotik.com/docs/display/ROS/OpenVPN
+-https://wiki.mikrotik.com/wiki/Manual:Create_Certificates#Generate_certificates_on_RouterOS
+
+Sección Mikrotiks
+....................................................................................................................
+CONFIGURACIÓN DE INTERFACES
+Configurar las interfaces de red según las necesidades. Por lo general, se deberá configurar una interfaz
+WAN para la conexión a Internet y una interfaz LAN para la red local.
+Asignar direcciones IP a estas interfaces y configurar las opciones de enrutamiento según sea necesario.
+
+CONFIGURACIÓN DHCP
+Si se desea que el dispositivo MikroTik actúe como servidor DHCP para la red local, podemos configurar el servicio DHCP en la interfaz LAN. 
+Esto permitirá que los dispositivos en la red obtengan direcciones IP automáticamente
+
+CONFIGURACIÓN DEL FIREWALL
+Configura reglas de firewall para controlar el tráfico de red entrante y saliente. 
+Por ejemplo, permitir el tráfico necesario para los servicios que deseamos ofrecer y bloquear el tráfico no deseado.
+
+.......................................................................................................................
+Sección Open VPN
+.......................................................................................................................
+INSTALACIÓN DEL PAQUETE OPEN VPN:
+Verificamos que el paquete OpenVPN esté instalado en el dispositivo MikroTik. 
+Podemos hacerlo navegando a System > Packages en la interfaz web de MikroTik y asegurándote de que OpenVPN esté instalado.
+
+GENERACIÓN DE CERTIFICADOS Y CLAVE:
+Genera los certificados y claves necesarios para OpenVPN. Esto incluye un certificado y 
+una clave para el servidor VPN, así como certificados y claves para los clientes VPN.
+https://help.mikrotik.com/docs/display/ROS/OpenVPN
+
+CONFIGURACIÓN DEL SERVIDOR OPEN VPN: 
+En la interfaz web de MikroTik, PPP > Interface > OVPN Server y haz clic en el botón Add New.
+En la ventana de configuración, especificamos un nombre para la interfaz VPN, se elige la dirección IP y 
+el puerto en el que el servidor VPN escuchará las conexiones entrantes,
+y seleccionamos los certificados y claves que se generaron anteriormente.
+Configuramos otras opciones según sea necesario, como la autenticación de usuarios, las direcciones IP de
+asignación para los clientes VPN.
+
+CONFIGURACIÓN DE FIREWALL: 
+ConfiguraMOS reglas de firewall para permitir el tráfico VPN entrante y saliente. 
+OJO ACA! permitir el tráfico necesario para OpenVPN en el firewall del dispositivo MikroTik.
+
+CONFIGURACIÓN DE CLIENTES VPN:
+Configuramos los clientes VPN para conectarse al servidor OpenVPN.
+generar archivos de configuración para los clientes y distribuirlos a los usuarios que necesiten acceder a la red VPN.
+
+PRUEBAS DE CONEXIÓN:
+verificamos que los clientes puedan conectarse al servidor y acceder a los recursos de la red.
+
+
+
